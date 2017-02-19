@@ -11,7 +11,7 @@ namespace DerekDay3
         //constructor
         public SavingAccount(string AccountNumber, Customer AccountHolderName, double Balance) : base(AccountNumber, AccountHolderName, Balance) { }
 
-        public new double CalculateInterest()//new method1-childclass1
+        public override double CalculateInterest()//new method1-childclass1
         {
             return 0.01 * Balance;
         }

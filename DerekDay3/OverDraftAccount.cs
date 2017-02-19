@@ -20,10 +20,11 @@ namespace DerekDay3
 
         public new void Withdraw(double amount)//new method2-childclass2
         {
+
             Balance -= amount;
         }
 
-        public new double CalculateInterest()//new method3-childclass2
+        public override double CalculateInterest()//new method3-childclass2
         {
             if (Balance >= 0)
                 return Balance * interestrate;

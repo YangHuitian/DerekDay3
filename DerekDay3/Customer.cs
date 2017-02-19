@@ -12,6 +12,7 @@ namespace DerekDay3
         string Address;
         string PassportNumber;
         DateTime DateOfBirth;
+        int age;
 
         //constructor
         public Customer(string Name, string Address, string PassportNumber, DateTime DateOfBirth)
@@ -20,6 +21,14 @@ namespace DerekDay3
             this.Address = Address;
             this.PassportNumber = PassportNumber;
             this.DateOfBirth = DateOfBirth;
+
+        }
+        public Customer(string Name, string Address, string PassportNumber, int age)
+        {
+            this.Name = Name;
+            this.Address = Address;
+            this.PassportNumber = PassportNumber;
+            this.age = age;
         }
         public Customer()
             : this("Thisname", "ThisAddress", "ThisPassport", new DateTime(1980, 1, 1)) { }
@@ -34,7 +43,7 @@ namespace DerekDay3
             return age;
         }
 
-        public string Show()
+        public string Show()//Show name
         {
             return string.Format("{0}", Name);
         }

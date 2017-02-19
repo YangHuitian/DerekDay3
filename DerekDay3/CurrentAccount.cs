@@ -15,5 +15,11 @@ namespace DerekDay3
         {
             return (String.Format("[CurrentAccount] AccountNumber:{0}; AccountHolderName: {1}, Balance: {2}", AccountNumber, AccountHolderName.Show(), Balance));
         }
+
+        public override double CalculateInterest()//new method2-childclass2
+        {
+            return 0.0025 * Balance;
+        }
     }
 }
+

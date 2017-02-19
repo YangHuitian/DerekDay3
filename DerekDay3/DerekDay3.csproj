@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>DerekDay3.BankTest2</StartupObject>
+    <StartupObject>DerekDay3.BankAccountTest502</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -47,6 +47,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Account.cs" />
+    <Compile Include="BankAccountTest502.cs" />
+    <Compile Include="BankBranch.cs" />
     <Compile Include="CurrentAccount.cs" />
     <Compile Include="Customer.cs" />
     <Compile Include="OverDraftAccount.cs" />

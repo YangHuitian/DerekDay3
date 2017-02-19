@@ -35,6 +35,28 @@ namespace DerekDay3
                 Console.WriteLine("You cannot transfer anymore.");
         }
 
+        //properties
+        public Customer ShowAccountHolderName
+        {
+            get
+            {
+                return AccountHolderName;
+            }
+        }
+        public string ShowAccountNumber
+        {
+            get
+            {
+                return AccountNumber;
+            }
+        }
+        public double ShowBal
+        {
+            get
+            {
+                return Balance;
+            }
+        }
 
         public virtual string Show()//method2-Show
         {
@@ -61,11 +83,11 @@ namespace DerekDay3
             Balance = Balance + amount;
         }
 
-        public double CalculateInterest()//method4-CalculateInterest
+        public virtual double CalculateInterest()//method5-CalculateInterest
         {
-            return 0.0025 * Balance;
+            return 0;//not using any rate
         }
-        public void CreditInterest()//method4-CreditInterest
+        public void CreditInterest()//method6-CreditInterest
         {
             Deposit(CalculateInterest());
         }
